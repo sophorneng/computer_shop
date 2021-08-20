@@ -4,5 +4,5 @@ $id = $_GET['id1'];
 $isDeleted = deletecomputer($id);
 
 if ($isDeleted) {
-    header("Location: http://localhost/2021-basic-php-project-sophorneng/?page=computer");
+    header("Location: http://localhost/computer_shop/?page=computer");
 }

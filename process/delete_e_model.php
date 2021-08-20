@@ -4,5 +4,5 @@ $id = $_GET['id'];
 $isDeleted = deleteElectric($id);
 
 if ($isDeleted) {
-    header("Location: http://localhost/2021-basic-php-project-sophorneng/?page=electro");
+    header("Location: http://localhost/computer_shop/?page=electro");
 }

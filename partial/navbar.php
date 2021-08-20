@@ -14,10 +14,10 @@
         <a class="nav-link" href="?page=home">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="?page=computer">computer</a>
+        <a class="nav-link" href="?page=computer">Computer</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="?page=electro">electric</a>
+        <a class="nav-link" href="?page=electro">Electronic</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?page=contact">Contact us</a>

@@ -14,10 +14,10 @@
         $name = $value['name'];
         $price = $value['price'];
         $description = $value['description'];
-        $profile = $value['image_url']; 
+        $profile =$_FILES['file']['name']; 
         $time = date("Y-m-d")." ".date("h:i:s");
         $cat_id = 1;
-        return db()->query("INSERT INTO product (name, price, description,date, profile, cat_id ) VALUES ('$name', '$price', '$description','$time', '$profile',  '$cat_id')");
+        return db()->query("INSERT INTO product (name, price, description, profile, cat_id ) VALUES ('$name', '$price', '$description', '$profile',  '$cat_id')");
     }
 
      // delete computer
@@ -30,7 +30,7 @@
         $name = $value['name'];
         $price = $value['price'];
         $description = $value['description'];
-        $profile = $value['image_url'];
+        $profile = $value['file'];
         $id = $value['pro_id'];
         return db()->query("UPDATE product SET name = '$name', price='$price', description='$description', profile='$profile'  WHERE pro_id = $id");
         
@@ -56,16 +56,16 @@
     }
 
     //create electrict
-    function createEletrict($value) {
+    function createElectric($value) {
         $name = $value['name'];
         $price = $value['price'];
         $description = $value['description'];
-        $profile = $value['image_url']; 
+        $profile =$_FILES['file']['name']; 
         $time = date("Y-m-d")." ".date("h:i:s");
         $cat_id = 2;
-        return db()->query("INSERT INTO product (name, price, description,date, profile, cat_id ) VALUES ('$name', '$price', '$description','$time', '$profile',  '$cat_id')");
+        return db()->query("INSERT INTO product (name, price, description, profile, cat_id ) VALUES ('$name', '$price', '$description', '$profile',  '$cat_id')");
     }
-    
+   
     // select one eletrict
     function selectOneElectrict($id) {
         return db()->query("SELECT * FROM product WHERE pro_id = $id");

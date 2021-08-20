@@ -1,9 +1,9 @@
-<div  style="background: pink;">
+<div style="background: pink;">
 <?php require_once('partial/header.php'); ?>
     <div class="container p-2" >
         <div class="d-flex justify-content-end p-2 ">
             <a href="process/create_com_html.php" class="btn btn-primary" >Create +</a>
-
+           
         </div>
         <br>
         <br>
@@ -17,8 +17,7 @@
            </div>
         </form>
         <hr>
-        <br>
-        <br>
+        
         <?php
             require_once('database/database.php');
             $cumputers = "";
@@ -37,7 +36,7 @@
             <div class="card-body">
                <div class="d-flex">
                     <div class="card-image mr-5">
-                        <img class="img-fluid" width="200" src="<?=$computer['profile']; ?>" alt="dfsf">
+                        <img class="img-fluid" width="200" src="images/<?=$computer['profile']; ?>" alt="dfsf">
                     </div>
                     <div class="info">
                         <h1 class="display-4"><?=$computer['name']?> </h1>

@@ -22,7 +22,7 @@
                 <input type="text" class="form-control" value="<?= $computer['description'] ?>" name="description">
             </div>
             <div class="form-group">
-                <input type="file" class="form-control" value="<?= $computer['profile'] ?>" name="image_url">
+                <input type="file" class="form-control" value="<?= $computer['profile'] ?>" name="file">
             </div>
             
             <div class="form-group">

@@ -71,15 +71,7 @@
             <br>
             <br>
       </div>
-      <footer class="bg-dark text-center text-white">
       
-  
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                 email :  sophorn.eng@student.passerellesnumeriques.org
-                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
-      </footer>
    </body>
 </body>
 </html>
