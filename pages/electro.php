@@ -8,7 +8,7 @@
         
         <form action="" method="post">
            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Search by title" name = "search">
+              <input type="text" class="form-control" placeholder="Search by name" name = "search">
               <div class="input-group-append">
                 <button class="btn btn-success" type="submit">research</button>
               </div>
@@ -33,7 +33,7 @@
                     $description = readMore($electrice['description'], 200);
                 ?>
                         <div class="card m-2" style="background-color:#CCFFFF;height:47%;magin-top:10%;flex: 1 1 30rem;
-                                            box-shadow: 0 .5rem 0.5rem black;
+                                           
                                             border-radius: .5rem;
                                             border: .1rem solid gray;
                                             position: relative;">                      
@@ -67,3 +67,49 @@
     </div>
 <?php require_once('partial/footer.php'); ?>
 </div>
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://web.facebook.com/" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://fontawesome.com/v5.15/icons/twitter" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/search?q=fab+fa-google&rlz=1C1BNSD_enKH942KH942&oq=fab+fa-google&aqs=chrome..69i57j0i512l4j0i22i30.981j0j4&sourceid=chrome&ie=UTF-8" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://fontawesome.com/v5.15/icons/instagram" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://fontawesome.com/v5.15/icons/linkedin-in" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>

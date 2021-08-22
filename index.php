@@ -10,8 +10,9 @@
             include_once('pages/electro.php');
         
 
-        } elseif ($_GET['page']=='contact'){
-            include_once('pages/contact.php');
+        } elseif ($_GET['page']=='login'){
+            include_once('pages/login.php');
+            
             
         } elseif ($_GET['page']=='home'){
             include_once('pages/home.php');

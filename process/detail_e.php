@@ -14,19 +14,17 @@
         <div class="card">
             <div class="card-body">
                <div class="d-flex">
-               <div class="card" style="width: 12rem;">
-                <img class="card-img-top" src="<?=$electrice['profile'] ?>">
-                <div class="card-body">
-                    <h3 class="card-title"><?=$electrice['name'] ?></h3>
-                    <h6 class="card-text"><?=$electrice['price'] ?></h6>
-                    <p class="card-text"><?=$electrice['description'] ?></p>
-                    <p class="card-text"><?=$electrice['date'] ?></p>
+                    <div class="card" style="width: 12rem;">
+                        <img class="card-img-top" src="../image_ele/<?=$electrice['profile'] ?>">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><?=$electrice['name'] ?></h3>
+                        <h6 class="card-text"><?=$electrice['price'] ?></h6>
                     
-                </div>
-                </div>
-               </div>
-                
-                </div>
+                        <p class="card-text"><?=$electrice['date'] ?></p>
+                        <p class="card-text"><?=$electrice['description'] ?></p>
+                    </div>
+               
             </div>
         </div>
         <?php endforeach; ?> 

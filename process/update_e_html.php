@@ -22,7 +22,7 @@
                 <input type="text" class="form-control" value="<?= $computer['description'] ?>" name="description">
             </div>
             <div class="form-group">
-                <input type="file" class="form-control" value="<?= $computer['profile'] ?>" name="file">
+                <input type="file" class="form-control" value="<?= $computer['profile'] ?>" name="profile">
             </div>
             
             <div class="form-group">

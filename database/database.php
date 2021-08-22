@@ -63,7 +63,7 @@
         $profile =$_FILES['file']['name']; 
         $time = date("Y-m-d")." ".date("h:i:s");
         $cat_id = 2;
-        return db()->query("INSERT INTO product (name, price, description, profile, cat_id ) VALUES ('$name', '$price', '$description', '$profile',  '$cat_id')");
+        return db()->query("INSERT INTO product (name, price, description,date, profile, cat_id ) VALUES ('$name', '$price', '$description','$time' ,'$profile',  '$cat_id')");
     }
    
     // select one eletrict
@@ -90,4 +90,40 @@
     function readMore($text,$number){
         return substr($text,0,$number);    
       
+    }
+
+    //get date from table user
+    function getAllUser() {
+        return db()->query("SELECT * FROM user");
+    }
+
+    //create user
+    function createUser($value) {
+        $username = $value['username'];
+        $password = $value['password'];
+        $image =$_FILES['file']['name']; 
+        $role = $value['role'];
+        
+        return db()->query("INSERT INTO user (username, password, image, Role) VALUES ('$username', '$password', '$image', '$role')");
+    }
+
+    // delete user
+    function deleteUser($id) {
+        return db()->query("DELETE FROM user WHERE user_id = $id");
+    }
+
+
+    //update user
+    function updateUser($value) {
+        $username = $value['username'];
+        $password = $value['password'];
+        $image =$_FILES['file']['name']; 
+        $role = $value['role'];
+        $id = $value['userID'];
+        return db()->query("UPDATE  user SET username = '$username', password='$password', image= '$image', Role= '$role')");
+    }
+
+    //update one id
+    function selectOneUser($id) {
+        return db()->query("SELECT * FROM user WHERE user_id = $id");
     }
